@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="testappstudyblue.juliakorolko.com.testappforstudyblue.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/no_connection_view_container"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:src="@drawable/no_network"
+            android:alpha=".5"
+            android:layout_width="180dp"
+            android:layout_height="165dp" />
+        <TextView
+            android:text="@string/no_internet_found"
+            android:layout_width="wrap_content"
+            android:textSize="18sp"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="@string/no_internet_found_check"
+            android:layout_width="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content" />
+        <Button
+            android:onClick="retryConnection"
+            android:layout_marginTop="@dimen/height_padding"
+            android:text="Retry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/items_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

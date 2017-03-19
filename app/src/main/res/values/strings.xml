@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TestAppForStudyBlue</string>
+    <string name="updated_on">"Updated on "</string>
+    <string name="repo_id">"ID "</string>
+    <string name="header_title">Repos From Ocramius</string>
+    <string name="header_description">List public repositories from Ocramius.
+        \nhttps://api.github.com/users/ocramius/repos</string>
+    <string name="no_internet_found">No Internet Found</string>
+    <string name="no_internet_found_check">Check your connection or try again</string>
+</resources>
